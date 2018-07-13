@@ -106,21 +106,51 @@ Operator Precedence
 // console.log(average);
 
 // Multiple Assignments
-var x, y;
-console.log(x, y);
-x = y = (3 + 5) * 4 - 6;
+// var x, y;
+// console.log(x, y);
+// x = y = (3 + 5) * 4 - 6;
 // 8 * 4 - 6 // 32 - 6 // 26
-console.log(x, y);
+// console.log(x, y);
 
 // More Operators
 // x = x * 2;
-x *= 2;
-console.log(x);
-x += 10;
-console.log(x);
+// x *= 2;
+// console.log(x);
+// x += 10;
+// console.log(x);
 
 // All three are the same effect
 // x = x + 1;
 // x += 1;
-x++;
-console.log(x);
+// x++;
+// console.log(x);
+
+
+/* ****************************
+Coding Challenge 1
+******************************* */
+
+// Mass Values
+var markMass, johnMass;
+markMass = 88;
+johnMass = 68;
+
+// Height Values
+var markHeight, johnHeight;
+markHeight = 2.1;
+johnHeight = 1.8;
+
+// Mark's BMI
+var markBmi = markMass / (markHeight * 2);
+console.log(markBmi);
+
+// John's BMI
+var johnBmi = johnMass / (johnHeight * 2);
+console.log(johnBmi);
+
+// Mark VS John
+var isMarkHigher = markBmi > johnBmi;
+console.log(isMarkHigher);
+
+// Print to result to console
+console.log("Is Mark's BMI higher than John's BMI? " + isMarkHigher);
