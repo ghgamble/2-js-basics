@@ -131,26 +131,93 @@ Coding Challenge 1
 ******************************* */
 
 // Mass Values
-var markMass, johnMass;
-markMass = 88;
-johnMass = 68;
+// var markMass, johnMass;
+// markMass = 88;
+// johnMass = 68;
 
 // Height Values
-var markHeight, johnHeight;
-markHeight = 2.1;
-johnHeight = 1.8;
+// var markHeight, johnHeight;
+// markHeight = 2.1;
+// johnHeight = 1.8;
 
 // Mark's BMI
-var markBmi = markMass / (markHeight * 2);
-console.log(markBmi);
+// var markBmi = markMass / (markHeight * 2);
+// console.log(markBmi);
 
 // John's BMI
-var johnBmi = johnMass / (johnHeight * 2);
-console.log(johnBmi);
+// var johnBmi = johnMass / (johnHeight * 2);
+// console.log(johnBmi);
 
 // Mark VS John
-var isMarkHigher = markBmi > johnBmi;
-console.log(isMarkHigher);
+// var isMarkHigher = markBmi > johnBmi;
+// console.log(isMarkHigher);
 
 // Print to result to console
-console.log("Is Mark's BMI higher than John's BMI? " + isMarkHigher);
+// console.log("Is Mark's BMI higher than John's BMI? " + isMarkHigher);
+
+
+
+/* ****************************
+If/Else Statements
+******************************* */
+
+// var firstName = 'John';
+// var civilStatus = 'single';
+//
+// if (civilStatus === 'married') {
+//       console.log(firstName + ' is married!');
+// }
+// else {
+//       console.log(firstName + ' will hopefully marry soon.');
+// }
+
+// var isMarried = false;
+// These two if statements are synonymous
+// if (isMarried === true) {
+//       console.log(firstName + ' is married!');
+// }
+// if (isMarried) {
+//       console.log(firstName + ' is married!');
+// }
+// else {
+//       console.log(firstName + ' will hopefully marry soon.');
+// }
+//
+// var markMass, johnMass;
+// markMass = 88;
+// johnMass = 68;
+//
+// var markHeight, johnHeight;
+// markHeight = 2.1;
+// johnHeight = 1.8;
+//
+// var markBmi = markMass / (markHeight * 2);
+// var johnBmi = johnMass / (johnHeight * 2);
+//
+// if (markBmi > johnBmi) {
+//       console.log('Mark\'s BMI is higher than John\'s.');
+// }
+// else {
+//       console.log('John\'s BMI is higher than Mark\'s.');
+// }
+
+
+/* ****************************
+Boolean Logic
+******************************* */
+
+var firstName = 'John';
+var age = 20;
+
+if (age < 13) {
+      console.log(firstName + ' is a boy.');
+}
+else if (age >= 13 && age < 20) {
+      console.log(firstName + ' is a teenager.');
+}
+else if (age >= 20 && age < 30) {
+      console.log(firstName + ' is a young man.');
+}
+else {
+      console.log(firstName + ' is a man.');
+}
