@@ -308,10 +308,10 @@ Coding Challenge 2
 
 // var teamJohn = (89 + 120 + 103) / 3;
 // var teamJohn = (89 + 120 + 124) / 3;
-var teamJohn = (89 + 120 + 130) / 3;
-var teamMike = (116 + 94 + 123) / 3;
-var teamMary = (97 + 134 + 105) / 3;
-console.log(teamJohn, teamMike, teamMary);
+// var teamJohn = (89 + 120 + 130) / 3;
+// var teamMike = (116 + 94 + 123) / 3;
+// var teamMary = (97 + 134 + 105) / 3;
+// console.log(teamJohn, teamMike, teamMary);
 
 // if (teamJohn > teamMike) {
 //       console.log('John\'s team wins with an average score of ' + teamJohn);
@@ -321,12 +321,40 @@ console.log(teamJohn, teamMike, teamMary);
 //       console.log('There is a draw');
 // }
 
-if (teamJohn > teamMike && teamJohn > teamMary) {
-      console.log('John\'s team wins with an average score of ' + teamJohn);
-} else if (teamMike > teamJohn && teamMike > teamMary) {
-      console.log('Mike\'s team wins with an average score of ' + teamMike);
-} else if (teamMary > teamJohn && teamMary > teamMike) {
-      console.log('Mary\'s team wins with an average score of ' + teamMary);
-} else {
-      console.log('There is a draw');
-}
+// if (teamJohn > teamMike && teamJohn > teamMary) {
+//       console.log('John\'s team wins with an average score of ' + teamJohn);
+// } else if (teamMike > teamJohn && teamMike > teamMary) {
+//       console.log('Mike\'s team wins with an average score of ' + teamMike);
+// } else if (teamMary > teamJohn && teamMary > teamMike) {
+//       console.log('Mary\'s team wins with an average score of ' + teamMary);
+// } else {
+//       console.log('There is a draw');
+// }
+
+
+/* ****************************
+Functions
+******************************* */
+
+// function calculateAge (birthYear) {
+//       return 2018 - birthYear;
+// }
+//
+// var ageJohn = calculateAge(1990);
+// var ageMike = calculateAge(1948);
+// var ageJane = calculateAge(1969);
+// console.log(ageJohn, ageMike, ageJane);
+//
+// function yearsUntilRetirement (year, firstName) {
+//       var age = calculateAge(year);
+//       var retirement = 65 - age;
+//       if (retirement > 0) {
+//             console.log(firstName + ' retires in ' + retirement + ' years.');
+//       } else {
+//             console.log(firstName + ' is already retired.');
+//       }
+// }
+//
+// yearsUntilRetirement(1990, 'John');
+// yearsUntilRetirement(1948, 'Mike');
+// yearsUntilRetirement(1969, 'Jane');
