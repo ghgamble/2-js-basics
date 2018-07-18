@@ -368,19 +368,76 @@ Function Statements and Expressions
 // function whatDoYouDo (job, firstName) {}
 
 // Function Expression
-var whatDoYouDo = function (job, firstName) {
-      switch (job) {
-            case 'teacher':
-                  return firstName + ' teaches kids how to code.';
-            case 'driver':
-                  return firstName + ' drives an Uber in Boulder.';
-            case 'designer':
-                  return firstName + ' designs beautiful websites.';
-            default:
-                  return firstName + ' does something else.';
-      }
-}
+// var whatDoYouDo = function (job, firstName) {
+//       switch (job) {
+//             case 'teacher':
+//                   return firstName + ' teaches kids how to code.';
+//             case 'driver':
+//                   return firstName + ' drives an Uber in Boulder.';
+//             case 'designer':
+//                   return firstName + ' designs beautiful websites.';
+//             default:
+//                   return firstName + ' does something else.';
+//       }
+// }
+//
+// console.log(whatDoYouDo('teacher', 'John'));
+// console.log(whatDoYouDo('designer', 'Jane'));
+// console.log(whatDoYouDo('retired', 'Mike'));
 
-console.log(whatDoYouDo('teacher', 'John'));
-console.log(whatDoYouDo('designer', 'Jane'));
-console.log(whatDoYouDo('retired', 'Mike'));
+
+/* ****************************
+Arrays
+******************************* */
+
+// Initialize Array
+var names = ['John', 'Mark', 'Jane'];
+var years = new Array(1990, 1969, 1948);
+
+// console.log(names[0]);
+// console.log(names);
+// console.log(names.length);
+
+
+// Mutate Array Data
+// Changing the value of the index of 1 in the array, so Mark will be replaced with Ben
+// names[1] = 'Ben';
+// console.log(names);
+
+// Adding a new index to the array, specifying where you want it to be placed. Only is effective if you know the contents of the array already
+// names[5] = 'Mary';
+// console.log(names);
+
+// Alternatively, you can just add a new index to the array, knowing that you're doing so at the end of the array, so you're not accidentally replacing data
+names[names.length] = 'Mary';
+console.log(names);
+
+// Different Data Types
+var john = ['John', 'Smith', 1990, 'teacher', false];
+
+// Push adds an element to the end of the array
+john.push('blue');
+console.log(john);
+
+// Unshift adds an element to the beginning of the array
+john.unshift('Mr.');
+console.log(john);
+
+// Pop removes element from the end of the array
+john.pop();
+console.log(john);
+
+// Shift removes element from the beginning of the array
+john.shift();
+console.log(john);
+
+// Returns position of the data that is entered into parentheses
+console.log(john.indexOf(1990));
+
+// If we ask the indexOf method to return the index of a value that does not exist in the array, it will return -1
+console.log(john.indexOf(23));
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
+console.log(isDesigner);
+
+console.log(john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer');
