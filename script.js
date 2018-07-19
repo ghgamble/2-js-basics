@@ -460,30 +460,69 @@ Coding Challenge 3
 // var totalBill = [142.6, 57.6, 294.8];
 
 // Challenge Solution
-function tipCalculator(bill) {
-      var percentage;
-      if (bill < 50) {
-            percentage = 0.2;
-      } else if (bill >= 50 && bill < 200) {
-            percentage = 0.15;
-      } else {
-            percentage = 0.1;
-      }
-      return percentage * bill;
-}
+// function tipCalculator(bill) {
+//       var percentage;
+//       if (bill < 50) {
+//             percentage = 0.2;
+//       } else if (bill >= 50 && bill < 200) {
+//             percentage = 0.15;
+//       } else {
+//             percentage = 0.1;
+//       }
+//       return percentage * bill;
+// }
+//
+// var bills = [124, 48, 268];
+//
+// var tips = [
+//       tipCalculator(bills[0]),
+//       tipCalculator(bills[1]),
+//       tipCalculator(bills[2])
+// ];
+// console.log(tips);
+//
+// var finalValues = [
+//       bills[0] + tips[0],
+//       bills[1] + tips[1],
+//       bills[2] + tips[2]
+// ];
+// console.log(finalValues);
 
-var bills = [124, 48, 268];
 
-var tips = [
-      tipCalculator(bills[0]),
-      tipCalculator(bills[1]),
-      tipCalculator(bills[2])
-];
-console.log(tips);
+/* ****************************
+Objects and Properties
+******************************* */
 
-var finalValues = [
-      bills[0] + tips[0],
-      bills[1] + tips[1],
-      bills[2] + tips[2]
-];
-console.log(finalValues);
+// There are two ways of creating new objects, object literal and new object syntax
+
+// Object Literal
+var john = {
+      firstName: 'John',
+      lastName: 'Smith',
+      birthYear: 1990,
+      family: ['Jane', 'Mark', 'Bob', 'Emily'],
+      job: 'teacher',
+      isMarried: false
+};
+
+// Logging to the console the entire John object, displaying all properties and values
+console.log(john);
+
+// Multiple ways to log one property and it's value
+console.log(john.firstName);
+console.log(john['lastName']);
+var x = 'birthYear';
+console.log(john[x]);
+
+// Mutating/changing data
+john.job = 'driver';
+console.log(john);
+john['isMarried'] = true;
+console.log(john);
+
+// New object syntax
+var jane = new Object();
+jane.firstName = 'Jane';
+jane.birthYear = 1969;
+jane['lastName'] = 'Smith';
+console.log(jane);
