@@ -391,8 +391,8 @@ Arrays
 ******************************* */
 
 // Initialize Array
-var names = ['John', 'Mark', 'Jane'];
-var years = new Array(1990, 1969, 1948);
+// var names = ['John', 'Mark', 'Jane'];
+// var years = new Array(1990, 1969, 1948);
 
 // console.log(names[0]);
 // console.log(names);
@@ -409,35 +409,81 @@ var years = new Array(1990, 1969, 1948);
 // console.log(names);
 
 // Alternatively, you can just add a new index to the array, knowing that you're doing so at the end of the array, so you're not accidentally replacing data
-names[names.length] = 'Mary';
-console.log(names);
+// names[names.length] = 'Mary';
+// console.log(names);
 
 // Different Data Types
-var john = ['John', 'Smith', 1990, 'teacher', false];
+// var john = ['John', 'Smith', 1990, 'teacher', false];
 
 // Push adds an element to the end of the array
-john.push('blue');
-console.log(john);
+// john.push('blue');
+// console.log(john);
 
 // Unshift adds an element to the beginning of the array
-john.unshift('Mr.');
-console.log(john);
+// john.unshift('Mr.');
+// console.log(john);
 
 // Pop removes element from the end of the array
-john.pop();
-console.log(john);
+// john.pop();
+// console.log(john);
 
 // Shift removes element from the beginning of the array
-john.shift();
-console.log(john);
+// john.shift();
+// console.log(john);
 
 // Returns position of the data that is entered into parentheses
-console.log(john.indexOf(1990));
+// console.log(john.indexOf(1990));
 
 // If we ask the indexOf method to return the index of a value that does not exist in the array, it will return -1
-console.log(john.indexOf(23));
 
-var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
-console.log(isDesigner);
 
-console.log(john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer');
+/* ****************************
+Coding Challenge 3
+******************************* */
+
+// Our Solution
+// var tipAmount = function (total) {
+//       if (total < 50) {
+//             return total * 0.2;
+//       } else if (total >= 50 && total <= 200) {
+//             return total * 0.15;
+//       } else {
+//             return total * 0.1;
+//       }
+// }
+//
+// console.log(tipAmount(124));
+// console.log(tipAmount(48));
+// console.log(tipAmount(268));
+//
+// var tipTotal = [18.6, 9.6, 26.8];
+// var totalBill = [142.6, 57.6, 294.8];
+
+// Challenge Solution
+function tipCalculator(bill) {
+      var percentage;
+      if (bill < 50) {
+            percentage = 0.2;
+      } else if (bill >= 50 && bill < 200) {
+            percentage = 0.15;
+      } else {
+            percentage = 0.1;
+      }
+      return percentage * bill;
+}
+
+var bills = [124, 48, 268];
+
+var tips = [
+      tipCalculator(bills[0]),
+      tipCalculator(bills[1]),
+      tipCalculator(bills[2])
+];
+console.log(tips);
+
+var finalValues = [
+      bills[0] + tips[0],
+      bills[1] + tips[1],
+      bills[2] + tips[2]
+];
+console.log(finalValues);
