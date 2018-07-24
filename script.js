@@ -548,3 +548,39 @@ Objects and Methods
 // console.log(john.calcAge());
 //
 // console.log(john);
+
+/* ****************************
+Coding Challenge 4
+******************************* */
+
+// My Solution
+
+var john = {
+      fullName: 'John Smith',
+      mass: 68,
+      height: 1.8,
+      calcBmi: function(mass, height) {
+            this.bmi = this.mass / (this.height * this.height);
+      }
+};
+
+var mark = {
+      fullName: 'Mark Andrews',
+      mass: 88,
+      height: 2.1,
+      calcBmi: function(mass, height) {
+            this.bmi = this.mass / (this.height * this.height);
+      }
+};
+
+console.log(mark, john);
+
+function highestBMI () {
+      if (john.bmi > mark.bmi) {
+            console.log(john.fullName + ' has a higher BMI than ' + mark.fullName);
+      } else {
+            console.log(mark.fullName + ' has a higher BMI than ' + john.fullName);
+      }
+}
+
+console.log(highestBMI());
