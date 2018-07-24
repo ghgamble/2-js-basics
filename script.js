@@ -496,33 +496,55 @@ Objects and Properties
 // There are two ways of creating new objects, object literal and new object syntax
 
 // Object Literal
-var john = {
-      firstName: 'John',
-      lastName: 'Smith',
-      birthYear: 1990,
-      family: ['Jane', 'Mark', 'Bob', 'Emily'],
-      job: 'teacher',
-      isMarried: false
-};
+// var john = {
+//       firstName: 'John',
+//       lastName: 'Smith',
+//       birthYear: 1990,
+//       family: ['Jane', 'Mark', 'Bob', 'Emily'],
+//       job: 'teacher',
+//       isMarried: false
+// };
 
 // Logging to the console the entire John object, displaying all properties and values
-console.log(john);
+// console.log(john);
 
 // Multiple ways to log one property and it's value
-console.log(john.firstName);
-console.log(john['lastName']);
-var x = 'birthYear';
-console.log(john[x]);
+// console.log(john.firstName);
+// console.log(john['lastName']);
+// var x = 'birthYear';
+// console.log(john[x]);
 
 // Mutating/changing data
-john.job = 'driver';
-console.log(john);
-john['isMarried'] = true;
-console.log(john);
+// john.job = 'driver';
+// console.log(john);
+// john['isMarried'] = true;
+// console.log(john);
 
 // New object syntax
-var jane = new Object();
-jane.firstName = 'Jane';
-jane.birthYear = 1969;
-jane['lastName'] = 'Smith';
-console.log(jane);
+
+/* *****************************************************************************
+// Eric and I stopped here
+********************************************************************************
+
+/* ****************************
+Objects and Methods
+******************************* */
+
+// var john = {
+//       firstName: 'John',
+//       lastName: 'Smith',
+//       birthYear: 1990,
+//       family: ['Jane', 'Mark', 'Bob', 'Emily'],
+//       job: 'teacher',
+//       isMarried: false,
+//       calcAge: function(birthYear) {
+//             this.age = 2018 - this.birthYear;
+//       }
+// };
+
+// Create function within object, so you don't hard code
+// First example uses the exact year, second calls the property value of the object. This is the same as "john." This points to the object in question.
+// console.log(john.calcAge(1990));
+// console.log(john.calcAge());
+//
+// console.log(john);
