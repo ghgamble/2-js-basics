@@ -587,32 +587,87 @@ Coding Challenge 4
 
 // Instructor Solution
 
-var john = {
-      fullName: 'John Smith',
-      mass: 92,
-      height: 1.95,
-      calcBMI: function () {
-            this.bmi = this.mass / (this.height * this.height);
-            return this.bmi;
-      }
-}
+// var john = {
+//       fullName: 'John Smith',
+//       mass: 92,
+//       height: 1.95,
+//       calcBMI: function () {
+//             this.bmi = this.mass / (this.height * this.height);
+//             return this.bmi;
+//       }
+// }
+//
+// var mark = {
+//       fullName: 'Mark Miller',
+//       mass: 78,
+//       height: 1.69,
+//       calcBMI: function () {
+//             this.bmi = this.mass / (this.height * this.height);
+//             return this.bmi;
+//       }
+// }
+//
+// console.log(john, mark);
+//
+// if (john.calcBMI() > mark.calcBMI()) {
+//       console.log(john.fullName + ' has a higher BMI of ' + john.bmi);
+// } else if (mark.calcBMI() > john.calcBMI()) {
+//       console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi);
+// } else {
+//       console.log('They have the same BMI.');
+// }
 
-var mark = {
-      fullName: 'Mark Miller',
-      mass: 78,
-      height: 1.69,
-      calcBMI: function () {
-            this.bmi = this.mass / (this.height * this.height);
-            return this.bmi;
-      }
-}
 
-console.log(john, mark);
+/* ****************************
+Loops and Iterations
+******************************* */
 
-if (john.calcBMI() > mark.calcBMI()) {
-      console.log(john.fullName + ' has a higher BMI of ' + john.bmi);
-} else if (mark.calcBMI() > john.calcBMI()) {
-      console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi);
-} else {
-      console.log('They have the same BMI.');
-}
+// console.log(1);
+// console.log(2);
+// console.log(3);
+// To 10
+// Rather
+// for (var i = 0; i < 10; i++) {
+//       console.log(i);
+// }
+// i = 0, 0 < 10 true, log i to console, i++ (counter is updated)
+// i = 1, 1 < 10 true, log i to console, i++
+// ...
+// i = 9, 9 < 10 true, log i to console, i++
+// i = 10, 10 < 10 FALSE, exit the loop
+
+// for (var i = 1; i <= 20; i += 2) {
+//       console.log(i);
+// }
+
+// var john = ['John', 'Smith', 1990, 'designer', false];
+// Want to log values to console
+// Easy when there are a few values, but array could be larger and could keep growing, needs to be DYNAMIC
+// Start at 0, because array starts at 0
+// for (var i = 0; i < john.length; i++) {
+//       console.log(john[i]);
+// }
+
+// While, we only have a condition
+// var i = 0;
+// while (i > john.length) {
+//       console.log(john[i]);
+//       i++;
+// }
+
+// Continue and break Statements
+// var john = ['John', 'Smith', 1990, 'designer', false];
+// If condition is not satisfied, it will skip printing the iteration, but continue through loop
+// for (var i = 0; i < john.length; i++) {
+//       if (typeof john[i] !== 'string') continue;
+//       console.log(john[i]);
+// }
+// If condition is not satisfied, it will skip printing the iteration, then break out of loop
+// for (var i = 0; i < john.length; i++) {
+//       if (typeof john[i] !== 'string') break;
+//       console.log(john[i]);
+// }
+// Loop through the array backwards
+// for (var i = john.length - 1; i >= 0; i--) {
+//       console.log(john[i]);
+// }
