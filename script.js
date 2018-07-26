@@ -671,3 +671,31 @@ Loops and Iterations
 // for (var i = john.length - 1; i >= 0; i--) {
 //       console.log(john[i]);
 // }
+
+
+/* ****************************
+Coding Challenge 5
+******************************* */
+
+var billVal = [124, 48, 268, 180, 42];
+
+function tipCalculator () {
+      var tips = [];
+      var finalVal = [];
+      for (var i = 0; i < billVal.length; i++) {
+            if (billVal[i] < 50) {
+                  tips.push(billVal[i] * 0.20);
+                  finalVal.push((billVal[i] * 0.20) + billVal[i]);
+            } else if (billVal[i] > 50 && billVal[i] < 200) {
+                  tips.push(billVal[i] * 0.15);
+                  finalVal.push((billVal[i] * 0.15) + billVal[i]);
+            } else {
+                  tips.push(billVal[i] * 0.10);
+                  finalVal.push((billVal[i] * 0.10) + billVal[i]);
+            }
+      }
+      console.log(tips);
+      console.log(finalVal);
+}
+
+tipCalculator(billVal);
