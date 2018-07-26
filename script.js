@@ -677,6 +677,8 @@ Loops and Iterations
 Coding Challenge 5
 ******************************* */
 
+// My Solution
+
 var billVal = [124, 48, 268, 180, 42];
 
 function tipCalculator () {
@@ -699,3 +701,32 @@ function tipCalculator () {
 }
 
 tipCalculator(billVal);
+
+// Instructor Solution Part 1
+
+var john = {
+      fullName: 'John Smith',
+      bills: [124, 48, 268, 180, 42],
+      calcTips: function () {
+            this.tips = [];
+            this.finalValues = [];
+            for (var i = 0; i < this.bills.length; i++) {
+                  // Determine percentage based on tipping rules
+                  var percentage;
+                  var bill = this.bills[i];
+                  if (bill < 50) {
+                        percentage = 0.20;
+                  } else if (bill <= 50 && bill < 200) {
+                        percentage = 0.15;
+                  } else {
+                        percentage = 0.10;
+                  }
+                  // Add result to the corresponding arrays
+                  this.tips[i] = bill * percentage;
+                  this.finalValues[i] = bill + bill * percentage;
+            }
+      }
+}
+
+john.calcTips();
+console.log(john);
